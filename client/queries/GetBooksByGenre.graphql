@@ -1,0 +1,10 @@
+query GetBooksByGenre($genre: String!) {
+	getBooksByGenre(genre: $genre) {
+		id
+		title
+        author 
+		description
+        price
+        genre
+	}
+}

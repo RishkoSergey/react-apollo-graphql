@@ -1,0 +1,17 @@
+type Book {
+	id: ID!
+	title: String!
+	author: String!
+	description: String!
+  price: Int!
+  genre: String!
+}
+
+type Query {
+  getBooksByGenre(genre: String!): [Book]!
+	getBook(id: ID!): Book!
+  getAllGenres: [String]!
+  sortDescByPrice: [Book]!
+  sortAscByPrice: [Book]!
+}
+

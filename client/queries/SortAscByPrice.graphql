@@ -1,0 +1,10 @@
+query SortAscByPrice {
+	sortAscByPrice {
+		id
+		title
+        author 
+		description
+        price
+        genre
+	}
+}
